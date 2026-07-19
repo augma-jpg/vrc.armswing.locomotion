@@ -1,0 +1,17 @@
+{
+  "source": "builtin",
+  "applications": [
+    {
+      "app_key": "armswing.locomotion",
+      "launch_type": "binary",
+      "binary_path_windows": "armswing.py",
+      "is_dashboard_overlay": false,
+      "action_manifest_path": "armswing_actions.json",
+      "strings": {
+        "en_us": {
+          "name": "Armswing Locomotion"
+        }
+      }
+    }
+  ]
+}

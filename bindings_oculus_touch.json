@@ -1,0 +1,39 @@
+{
+  "controller_type": "oculus_touch",
+  "name": "armswing v2 default bindings",
+  "description": "Grip and index trigger analog read for armswing locomotion",
+  "bindings": {
+    "/actions/armswing": {
+      "sources": [
+        {
+          "path": "/user/hand/left/input/grip",
+          "mode": "trigger",
+          "inputs": {
+            "pull": { "output": "/actions/armswing/in/LeftGrip" }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/grip",
+          "mode": "trigger",
+          "inputs": {
+            "pull": { "output": "/actions/armswing/in/RightGrip" }
+          }
+        },
+        {
+          "path": "/user/hand/left/input/trigger",
+          "mode": "trigger",
+          "inputs": {
+            "pull": { "output": "/actions/armswing/in/LeftTrigger" }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/trigger",
+          "mode": "trigger",
+          "inputs": {
+            "pull": { "output": "/actions/armswing/in/RightTrigger" }
+          }
+        }
+      ]
+    }
+  }
+}

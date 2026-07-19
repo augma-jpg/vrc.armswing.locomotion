@@ -1,0 +1,26 @@
+{
+  "default_bindings": [
+    {
+      "controller_type": "oculus_touch",
+      "binding_url": "bindings_oculus_touch.json"
+    }
+  ],
+  "actions": [
+    { "name": "/actions/armswing/in/LeftGrip",       "type": "vector1", "requirement": "optional" },
+    { "name": "/actions/armswing/in/RightGrip",      "type": "vector1", "requirement": "optional" },
+    { "name": "/actions/armswing/in/LeftTrigger",    "type": "vector1", "requirement": "optional" },
+    { "name": "/actions/armswing/in/RightTrigger",   "type": "vector1", "requirement": "optional" }
+  ],
+  "action_sets": [
+    { "name": "/actions/armswing", "usage": "leftright" }
+  ],
+  "localization": [
+    {
+      "language_tag": "en_US",
+      "/actions/armswing/in/LeftGrip": "Left grip (analog)",
+      "/actions/armswing/in/RightGrip": "Right grip (analog)",
+      "/actions/armswing/in/LeftTrigger": "Left index trigger (analog)",
+      "/actions/armswing/in/RightTrigger": "Right index trigger (analog)"
+    }
+  ]
+}
