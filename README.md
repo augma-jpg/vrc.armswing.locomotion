@@ -14,7 +14,32 @@
 その振り速度に応じて移動するツールです。頭（HMD）ではなく**体の向き**に進むため、
 「周囲を見回しながら移動する」「振り返りながら走る」ことができます。
 
-<!-- TODO: デモ GIF をここに追加 -->
+## Demo
+
+**後ろを振り返りながら、体の向きに走り続ける**（本ツールの核心機能）
+
+![look-back running](docs/demo_lookback_run.gif)
+
+> **Note**: 三人称ではアバターが「横歩き」している様に見えますが、
+> これはVRChatのIKがアバターの体の向きを頭（HMD）に追従させる仕様のためです。
+> （生身の身体は頭が後ろを向く、腰から上は頭に追従して横向きにひねられた状態になる、
+> 腰から下の下半身はまっすぐ前方向みたいな状態…となるが、VRChatだと頭の向きに
+> 身体全体がつられるのでこういう横歩きっぽい見た目になる）
+> プレイヤー本人の一人称では、自分の体は> ほぼ視界に入らないため違和感はなく、
+> 後ろを見ながらまっすぐ移動している体験になります（酔いも起きません）。
+>
+> In third-person view the avatar appears to strafe sideways. This is because
+> VRChat's IK aligns the avatar's body with the headset orientation, which
+> cannot be controlled externally. In first-person it simply feels like
+> running forward while looking back — no motion sickness occurs.
+
+**腕振りで走る・ジャンプする**
+
+![run and jump](docs/demo_run_jump.gif)
+
+**腕を振る方向に進む**（左右に振れば横歩き）
+
+![strafe](docs/demo_strafe.gif)
 
 ## 特徴
 
